@@ -1,0 +1,14 @@
+{
+  "name": "teaming-lite-prototype",
+  "private": true,
+  "type": "module",
+  "workspaces": ["shared", "app", "runner", "web"],
+  "scripts": {
+    "typecheck": "tsc -p app && tsc -p runner && tsc -p web",
+    "dev:web": "npm run dev -w web"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3"
+  }
+}
